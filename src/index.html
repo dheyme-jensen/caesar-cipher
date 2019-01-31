@@ -4,10 +4,34 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+
   </head>
   <body>
+    <label for="msg1">Insira uma mensagem para ser 
+      Cifrada ou Decifrada</label><br><br>
+
+    <textarea id="msg1" name="msg1"
+          rows="5" cols="33"></textarea><br><br>
+
+
+   <label for="deslocamento">Selecione um deslocamento </label><br><br>
+
+    <input type="number" id="deslocamento" name="deslocamento"      
+          minlength="1" maxlength="4" size="10"><br><br>
+
+   <button id="cifrar" onclick="valores()">Cifrar</button>
+      
+   <button id="decifrar" onclick="valores2()">Decifrar</button><br><br>
+
+    <div id="texto">
+    <p id= "encryptResult"</p>
+    <p id= "decryptResult"</p>
+    </div>
+    
     <div id="root"></div>
     <script src="cipher.js"></script>
-    <script src="index.js"></script>
+    <script src="testes.js"></script>
   </body>
 </html>
