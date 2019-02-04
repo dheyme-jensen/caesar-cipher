@@ -4,7 +4,6 @@
 .show{
   display: block;
 }
-
 html {
   background-image: url("typewriter-2325552_1920.jpg");
   background-repeat: no-repeat;
@@ -12,22 +11,19 @@ html {
   background-position-x: left;
   background-position-y: 28%;
 }
-    
 body {
   text-align: left;
-  text-shadow: white 0.1em 0.1em 0.2em;
   font-size: 20px;
   font-family: 'Noto Sans TC', sans-serif;
   color: black;
   padding-top: 4px;
 }
-
 button {
-  background-color: black;
+  background-color: #232b2b;
   font-family:'Noto Sans TC', sans-serif;
   text-align: center;
   font-size: 20px;
-  color: white;
+  color: #d4d8d4;
   outline: 1px;
   border:8px;
   border-radius: 15px;
@@ -35,15 +31,14 @@ button {
   padding-bottom: 10px;
   width: 200px;
 }
-
-#texto {
+#resultScreen {
   font-family: 'Noto Sans TC', sans-serif;
   color: black;
-  font-size: 17px;
+  font-size: 20px;
   text-align: left;
+  text-shadow: white 0.1em 0.1em 0.2em;
 }
-
-#msg1 {
+#textInput {
   padding-top: 40px;
   padding-bottom: 40px;
   width: 530px;
@@ -53,9 +48,9 @@ button {
   font-family: 'Noto Sans TC', sans-serif;  
   color: black;
   font-size: 15px;
+  text-align: justify;
 }
-
-#deslocamento {
+#offset {
   padding-top: 7px;
   padding-bottom: 7px;
   width: 250px;
@@ -63,11 +58,28 @@ button {
   border-radius: 9px;
   background-color: #DCDCDC;
 }
-
 #title {
-  font-family: 'Staatliches', cursive;
-  color: black;
-  font-size: 40px;
+  font-family: 'Cinzel', serif;
+  color: #232b2b;
+  font-size: 45px;
   text-align: left;
-  text-shadow: white 0.1em 0.1em 0.2em;
+  text-shadow: #a19c9c 0.1em 0.1em 0.2em;
+}
+a:link {
+  background: #B1B1B1;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  border-width: 4px;
+  border-style: solid;
+  border-top-color: #DFDFDF;
+  border-right-color: #666;
+  border-bottom-color: #333;
+  border-left-color: #858585;
+}
+a:hover {
+  background: #B1B1B1;
+  color: #FFF;
+  font-weight: bold;
+  border-color: #B1B1B1;
 }

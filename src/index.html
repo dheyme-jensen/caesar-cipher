@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
+ <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <h1 id= "title">Cipher</h1>
+    <h1 id= "title">Cifra de César</h1>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
-
-   </head>
-  <body>
-    <body>
-      <div id="tela-inicial">
-      <label for="msg1">Insira uma mensagem para ser 
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+ </head>
+ <body>
+    <div id="homeScreen">
+      <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="resource window">Como usar</a><br><br>
+      <label for="textInput">Insira uma mensagem para ser 
         Cifrada ou Decifrada</label><br><br>
-  
-      <textarea id="msg1" name="msg1"
+      
+      <textarea id="textInput" name="textInput"
             rows="5" cols="33"></textarea><br><br>
   
+      <label for="offset">Selecione um deslocamento </label><br><br>
   
-     <label for="deslocamento">Selecione um deslocamento </label><br><br>
-  
-      <input type="number" id="deslocamento" name="deslocamento"      
+      <input type="number" id="offset" name="offset"      
             minlength="1" maxlength="4" size="10"><br><br>
   
-     <button id="cifrar" onclick="valores()">Cifrar</button>
+     <button id="cifrar" onclick="incoming()">Cifrar</button>
         
-     <button id="decifrar" onclick="valores2()">Decifrar</button><br><br>
-     </div>
+     <button id="decifrar" onclick="incoming2()">Decifrar</button><br><br>
+    </div>
   
-      <div id="tela-resultado" class= "hide">
+    <div id="resultScreen" class= "hide">
       <p id= "message"></p>
       <button id="comeBack" onclick="comeBack()">Voltar</button>
-  
-      </div>
+    </div>
       
     <div id="root"></div>
     <script src="cipher.js"></script>
-    <script src="testes.js"></script>
-  </body>
+    <script src="tests.js"></script>
+ </body>
 </html>
